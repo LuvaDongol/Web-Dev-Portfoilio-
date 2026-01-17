@@ -1,0 +1,54 @@
+.skill_box {
+  margin-bottom: 20px;
+}
+.skill_box > p {
+  color: #555;
+  margin-bottom: 15px;
+  
+}
+.skill_grey_box {
+  background: #999;
+  border-radius: 6px;
+}
+.skill_color_box {
+  width: 99.9%;
+  background: blue;
+  border-radius: 6px;
+  position: relative;
+  color: rgb(25, 25, 25);
+  height: 6px;
+}
+.skill_color_box > span {
+  position: absolute;
+  right: 0;
+  top: -22px;
+  font-size: 12px;
+}
+.HTML {
+  background: red;
+  width: 85%;
+  border-color: red;
+}
+.CSS {
+  background: blue;
+  width: 90%;
+}
+.JavaScript {
+  background: green;
+  width: 75%;
+}
+.Fuckery {
+  background: aqua;
+  width: 100%;
+}
+.Amir {
+  background: orange;
+  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .outerbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}

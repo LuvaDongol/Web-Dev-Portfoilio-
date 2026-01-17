@@ -1,0 +1,55 @@
+#about > p {
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+.aboutskills > div {
+  margin-bottom: 50px;
+  border-bottom: 2px solid #ddd;
+  padding: 24px;
+  color: #333;
+}
+.aboutskills i {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.aboutskills h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+.aboutskills > div:nth-child(1) i {
+  color: #e44d26;
+}
+.aboutskills > div:nth-child(2) i {
+  color: #264de4;
+}
+.aboutskills > div:nth-child(3) i {
+  color: #f0db4f;
+}
+.aboutskills > div:nth-child(4) i {
+  color: #888;
+}
+.aboutskills > div:nth-child(1) {
+  border-bottom: 2px solid #e44d26;
+}
+.aboutskills > div:nth-child(2) {
+  border-bottom: 2px solid #264de4;
+}
+.aboutskills > div:nth-child(3) {
+  border-bottom: 2px solid #f0db4f;
+}
+.aboutskills > div:nth-child(4) {
+  border-bottom: 2px solid #888;
+}
+@media screen and (min-width: 768px) {
+  .aboutskills {
+    display: flex;
+
+    gap: 30px;
+  }
+  .aboutskills > div {
+    flex-grow: 1;
+  }
+}
