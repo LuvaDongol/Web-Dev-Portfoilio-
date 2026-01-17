@@ -29,7 +29,7 @@ GitHub Pages is the easiest option since your code is already on GitHub.
 3. **Wait for deployment:**
    - GitHub will automatically deploy your site
    - This usually takes 1-3 minutes
-   - Your site will be available at: `https://luvalidongol.github.io/Web-Dev-Portfoilio-/`
+   - Your site will be available at: `https://luvadongol.github.io/Web-Dev-Portfoilio-/`
 
 4. **View your site:**
    - Once deployed, you'll see the URL in the Pages settings
