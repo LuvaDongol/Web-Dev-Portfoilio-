@@ -1,54 +1,79 @@
+.outerbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
 .skill_box {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
-.skill_box > p {
-  color: #555;
-  margin-bottom: 15px;
-  
-}
-.skill_grey_box {
-  background: #999;
-  border-radius: 6px;
-}
-.skill_color_box {
-  width: 99.9%;
-  background: blue;
-  border-radius: 6px;
+
+.skill_circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: conic-gradient(var(--color) calc(var(--percent) * 1%), #e0e0e0 0);
   position: relative;
-  color: rgb(25, 25, 25);
-  height: 6px;
+  transition: transform 0.3s ease;
 }
-.skill_color_box > span {
-  position: absolute;
-  right: 0;
-  top: -22px;
-  font-size: 12px;
+
+.skill_circle:hover {
+  transform: scale(1.1);
 }
-.HTML {
-  background: red;
-  width: 85%;
-  border-color: red;
+
+.skill_circle_inner {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.CSS {
-  background: blue;
-  width: 90%;
+
+.skill_percent {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  font-family: "Quicksand", sans-serif;
 }
-.JavaScript {
-  background: green;
-  width: 75%;
+
+.skill_name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-.Fuckery {
-  background: aqua;
-  width: 100%;
-}
-.Amir {
-  background: orange;
-  width: 50%;
-}
-@media screen and (min-width: 768px) {
+
+@media screen and (max-width: 768px) {
+  .skill_circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill_circle_inner {
+    width: 95px;
+    height: 95px;
+  }
+
+  .skill_percent {
+    font-size: 20px;
+  }
+
   .outerbox {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 30px;
   }
 }

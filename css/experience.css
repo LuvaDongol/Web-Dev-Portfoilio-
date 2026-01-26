@@ -1,0 +1,100 @@
+.experience__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience__item {
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+  background: #f2f3f7;
+  border-radius: 8px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.experience__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.experience__icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2c98f0;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.experience__content {
+  flex: 1;
+}
+
+.experience__content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  font-family: "Playfair Display", serif;
+}
+
+.experience__role {
+  font-size: 14px;
+  color: #2c98f0;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.experience__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience__list li {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.experience__list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #2c98f0;
+  font-weight: bold;
+}
+
+.experience__list li strong {
+  color: #333;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .experience__item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience__icon {
+    margin: 0 auto;
+  }
+
+  .experience__list li {
+    text-align: left;
+  }
+}

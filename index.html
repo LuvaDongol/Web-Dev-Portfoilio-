@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -24,16 +24,50 @@
     <link rel="stylesheet" href="css/skill.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/work-count.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/education.css" />
+    <link rel="stylesheet" href="css/experience.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
     <nav class="sidebar">
-      <i id="hamburger" class="fa-solid fa-bars sidebar_hamburger"></i>
-      <div class="sidebar_content">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
+      <i id="hamburger" class="fa-solid fa-bars sidebar__hamburger"></i>
+
+      <div class="sidebar__content">
+        <img
+          class="sidebar__image"
+          src="images/Profile.jpeg"
+          alt="Profile Image"
+        />
+        <h1 class="sidebar__name">Luva Dongol</h1>
+        <h2 class="sidebar__job">Student</h2>
+
+        <ul class="sidebar__list">
+          <li class="sidebar__list__item">
+            <a href="#hero">home</a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#about">about</a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#education">education</a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#skills">skills</a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#experience">experience</a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#contact">contact</a>
+          </li>
         </ul>
+
+        <p class="sidebar__copyright">
+          &copy; 2026 All rights reserved | Made with &#128150; by
+          <span>Luva</span>
+        </p>
       </div>
     </nav>
     <section id="hero">
@@ -43,21 +77,53 @@
         I am a Developer
       </h1>
       <p>Electronics, Communication & Information Engineer</p>
-      <button>Contact Mee 📞</button>
+      <button id="heroContactBtn">
+        Contact Mee <i class="fa-solid fa-phone"></i>
+      </button>
+      <div class="hero__social">
+        <a href="https://github.com/LuvaDongol" target="_blank" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/luva-dongol-89087b253/"
+          target="_blank"
+          title="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://x.com/_booring" target="_blank" title="Twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" title="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
     </section>
     <section id="about" class="section">
       <p class="section_title">about me</p>
       <p class="section_subtitle">who am i?</p>
       <p>
-        <strong>Hi, I am Luva</strong> Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Ab voluptates corporis fugiat, eius non a natus
-        laudantium, dicta impedit ad ea dolorem saepe quia eligendi quos,
-        nostrum sit molestiae quisquam rerum consequatur mollitia pariatur!
-        Nulla sapiente maiores, quia magnam impedit facere libero distinctio
-        saepe officiis consectetur dolorum, fugit necessitatibus deserunt culpa
-        quo omnis at aliquid ratione rem perspiciatis similique! Culpa natus
-        assumenda tempore a eum, maiores dolore fugiat, reiciendis in fugit,
-        dolorem est.
+        <strong>Hi, I am Luva</strong> I am a systems-oriented engineer and
+        technical architect who operates at the convergence of theoretical AI,
+        practical hardware systems, and full-stack development. My approach is
+        driven by a core philosophy: leveraging deep technical knowledge—from
+        embedded firmware and microprocessor assembly to modern machine learning
+        architectures—to build coherent, efficient systems that solve complex,
+        real-world problems. I specialize in bridging the gap between abstract
+        theoretical logic and practical, hardware-constrained applications,
+        focusing on the "entire stack" of a project, from a sensor’s voltage
+        output to high-level knowledge representation and web visualization.
+        Whether I am implementing low-level graphics algorithms in C, analyzing
+        control systems stability, or designing AI search strategies, my work is
+        defined by a methodical "Objective → Theory → Implementation →
+        Observation" framework. With a background in A-Level Economics that
+        informs my lens of resource optimization and a commitment to meticulous,
+        academic-standard documentation, I aim to build validated, integrated
+        solutions where the boundaries between hardware, software, and
+        intelligence are blurred.
       </p>
       <div class="aboutskills">
         <div>
@@ -78,57 +144,463 @@
         </div>
       </div>
     </section>
+    <section id="work__count">
+      <span>309</span>
+      <span>Cups of Coffee</span>
+      <span>356</span>
+      <span>Lab Reports</span>
+      <span>300</span>
+      <span>Assignments</span>
+      <span>10</span>
+      <span>Engineering Projects</span>
+    </section>
+    <section id="education" class="section">
+      <p class="section_title">education</p>
+      <p class="section_subtitle">my education</p>
+      <div class="edu__container">
+        <div class="edu__box">
+          <i class="fa-regular fa-pen-to-square"></i>
+          <h2>SEE (A+) <span>2020</span></h2>
+          <h3>Shankari School</h3>
+        </div>
+        <div class="edu__box">
+          <i class="fa-regular fa-pen-to-square"></i>
+          <h2>A Level <span>2022</span></h2>
+          <h3>Budhanilkantha School</h3>
+        </div>
+        <div class="edu__box">
+          <i class="fa-regular fa-pen-to-square"></i>
+          <h2>Bachelor of Engineering BEI<span>Running</span></h2>
+          <h3>National College of Engineering</h3>
+        </div>
+        <div class="edu__box empty">
+          <i class="fa-regular"></i>
+        </div>
+      </div>
+    </section>
     <section id="skills" class="section">
       <p class="section_title">My speciality</p>
       <p class="section_subtitle">My skills</p>
       <div class="outerbox">
         <div class="skill_box">
-          <p>HTML</p>
-          <div class="skill_grey_box">
-            <div class="skill_color_box HTML">
-              <span>85%</span>
+          <div
+            class="skill_circle"
+            data-percent="85"
+            style="--percent: 85; --color: #e34c26"
+          >
+            <div class="skill_circle_inner">
+              <span class="skill_percent">85%</span>
             </div>
           </div>
+          <p class="skill_name">HTML</p>
         </div>
         <div class="skill_box">
-          <p>CSS</p>
-          <div class="skill_grey_box">
-            <div class="skill_color_box CSS">
-              <span>90%</span>
+          <div
+            class="skill_circle"
+            data-percent="90"
+            style="--percent: 90; --color: #264de4"
+          >
+            <div class="skill_circle_inner">
+              <span class="skill_percent">90%</span>
             </div>
           </div>
+          <p class="skill_name">CSS</p>
         </div>
         <div class="skill_box">
-          <p>JavaScript</p>
-          <div class="skill_grey_box">
-            <div class="skill_color_box JavaScript">
-              <span>75%</span>
+          <div
+            class="skill_circle"
+            data-percent="75"
+            style="--percent: 75; --color: #f0db4f"
+          >
+            <div class="skill_circle_inner">
+              <span class="skill_percent">75%</span>
             </div>
           </div>
+          <p class="skill_name">JavaScript</p>
         </div>
         <div class="skill_box">
-          <p>Fuckery</p>
-          <div class="skill_grey_box">
-            <div class="skill_color_box Fuckery">
-              <span>100%</span>
+          <div
+            class="skill_circle"
+            data-percent="86"
+            style="--percent: 86; --color: #00599c"
+          >
+            <div class="skill_circle_inner">
+              <span class="skill_percent">86%</span>
             </div>
           </div>
+          <p class="skill_name">C++</p>
         </div>
         <div class="skill_box">
-          <p>Amir</p>
-          <div class="skill_grey_box">
-            <div class="skill_color_box Amir">
-              <span>50%</span>
+          <div
+            class="skill_circle"
+            data-percent="88"
+            style="--percent: 88; --color: #a8b9cc"
+          >
+            <div class="skill_circle_inner">
+              <span class="skill_percent">88%</span>
             </div>
+          </div>
+          <p class="skill_name">C</p>
+        </div>
+        <div class="skill_box">
+          <div
+            class="skill_circle"
+            data-percent="35"
+            style="--percent: 35; --color: #000000"
+          >
+            <div class="skill_circle_inner">
+              <span class="skill_percent">35%</span>
+            </div>
+          </div>
+          <p class="skill_name">Unity</p>
+        </div>
+        <div class="skill_box">
+          <div
+            class="skill_circle"
+            data-percent="40"
+            style="--percent: 40; --color: #68217a"
+          >
+            <div class="skill_circle_inner">
+              <span class="skill_percent">40%</span>
+            </div>
+          </div>
+          <p class="skill_name">C#</p>
+        </div>
+        <div class="skill_box">
+          <div
+            class="skill_circle"
+            data-percent="30"
+            style="--percent: 30; --color: #ff6f00"
+          >
+            <div class="skill_circle_inner">
+              <span class="skill_percent">30%</span>
+            </div>
+          </div>
+          <p class="skill_name">AI/ML</p>
+        </div>
+        <div class="skill_box">
+          <div
+            class="skill_circle"
+            data-percent="25"
+            style="--percent: 25; --color: #f5792a"
+          >
+            <div class="skill_circle_inner">
+              <span class="skill_percent">25%</span>
+            </div>
+          </div>
+          <p class="skill_name">Blender</p>
+        </div>
+        <div class="skill_box">
+          <div
+            class="skill_circle"
+            data-percent="28"
+            style="--percent: 28; --color: #0000cc"
+          >
+            <div class="skill_circle_inner">
+              <span class="skill_percent">28%</span>
+            </div>
+          </div>
+          <p class="skill_name">Audacity</p>
+        </div>
+        <div class="skill_box">
+          <div
+            class="skill_circle"
+            data-percent="65"
+            style="--percent: 65; --color: #1f2937"
+          >
+            <div class="skill_circle_inner">
+              <span class="skill_percent">65%</span>
+            </div>
+          </div>
+          <p class="skill_name">Leadership</p>
+        </div>
+        <div class="skill_box">
+          <div
+            class="skill_circle"
+            data-percent="62"
+            style="--percent: 62; --color: #d4a574"
+          >
+            <div class="skill_circle_inner">
+              <span class="skill_percent">62%</span>
+            </div>
+          </div>
+          <p class="skill_name">Baker</p>
+        </div>
+        <div class="skill_box">
+          <div
+            class="skill_circle"
+            data-percent="78"
+            style="--percent: 78; --color: #059669"
+          >
+            <div class="skill_circle_inner">
+              <span class="skill_percent">78%</span>
+            </div>
+          </div>
+          <p class="skill_name">Finance & Mgmt</p>
+        </div>
+        <div class="skill_box">
+          <div
+            class="skill_circle"
+            data-percent="65"
+            style="--percent: 65; --color: #10b981"
+          >
+            <div class="skill_circle_inner">
+              <span class="skill_percent">65%</span>
+            </div>
+          </div>
+          <p class="skill_name">Yapper</p>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="section">
+      <p class="section_title">Experience & Technical Engagements</p>
+      <p class="section_subtitle">My Experience</p>
+      <div class="experience__container">
+        <div class="experience__item">
+          <div class="experience__icon">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <div class="experience__content">
+            <h3>Mechatronics Prototyper</h3>
+            <p class="experience__role">Independent Engineering Projects</p>
+            <ul class="experience__list">
+              <li>
+                <strong>Automatic Irrigation System:</strong> Designed and
+                implemented a self-regulating irrigation loop using soil
+                moisture sensors and automated valve control to optimize
+                resource management. <br />
+              </li>
+              <li>
+                <strong>IR Sensor Smart Glasses:</strong> Engineered an
+                assistive technology prototype for obstacle detection, bridging
+                infrared sensing hardware with real-time feedback logic. <br />
+              </li>
+              <li>
+                <strong>Hardware-Software Integration:</strong> Developed
+                control logic for sensor-actuator systems, ensuring precise
+                response times between physical inputs and digital processing.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience__item">
+          <div class="experience__icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="experience__content">
+            <h3>Low-Level Graphics Developer</h3>
+            <p class="experience__role">Algorithmic Projects</p>
+            <ul class="experience__list">
+              <li>
+                <strong>Computer Graphics:</strong> Beyond basic rendering,
+                implemented a suite of algorithms including DDA and Bresenham's
+                for line generation, and custom functions for drawing and
+                filling complex polygons (triangles, pentagons). <br />
+              </li>
+              <li>
+                <strong>Numerical Computing:</strong> Developed high-precision
+                solvers in Python for root-finding (Bisection, Newton-Raphson,
+                Secant) and linear systems (Gauss-Jordan, Gauss-Seidel). <br />
+              </li>
+              <li>
+                <strong>Computational Calculus:</strong> Implemented numerical
+                integration (Simpson's, Boole's, Weddle's) and solved ordinary
+                differential equations using the Runge-Kutta (RK4) method.
+                <br />
+              </li>
+              <li>
+                <strong>AI Search & Logic:</strong> Architected problem-solving
+                agents using Uninformed Search (BFS, DFS, UCS) and modeled
+                decision optimization using Minimax with Alpha-Beta Pruning.
+                <br />
+              </li>
+              <li>
+                <strong>Interactive Systems:</strong> Built a graphics-based
+                Tic-Tac-Toe game in C, bridging low-level memory management with
+                real-time interactive logic. <br />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience__item">
+          <div class="experience__icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="experience__content">
+            <h3>Active Member</h3>
+            <p class="experience__role">
+              IT Club, National College of Engineering (NCE)
+            </p>
+            <ul class="experience__list">
+              <li>
+                Collaborated on club-based web projects, focusing on backend
+                infrastructure and managing Docker-based development
+                environments for reproducible workflows. <br />
+              </li>
+              <li>
+                Participated in technical discussions regarding system
+                integration and modern dev tools to support team-wide
+                deployment.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience__item">
+          <div class="experience__icon">
+            <i class="fa-solid fa-calculator"></i>
+          </div>
+          <div class="experience__content">
+            <h3>Active Member</h3>
+            <p class="experience__role">Mathematics Club, BNKS</p>
+            <ul class="experience__list">
+              <li>
+                National Level Coordination: Successfully organized the Math
+                League, a national-level mathematics competition, managing
+                logistics, participant engagement, and event flow. <br />
+              </li>
+              <li>
+                Event Management: Led various small-scale technical events and
+                math challenges, fostering a community of analytical thinkers
+                and problem solvers. <br />
+              </li>
+              <li>
+                Strategic Planning: Orchestrated event schedules and resource
+                allocation, demonstrating strong organizational leadership
+                alongside mathematical rigor. <br />
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
+    <section id="contact" class="section">
+      <p class="section_title">Get in Touch</p>
+      <p class="section_subtitle">Contact Me</p>
+      <div class="contact__info">
+        <div class="contact__info__item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <a href="mailto:luvadongol00@gmail.com">
+              <h3>Email</h3>
+              luvadongol00@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="contact__info__item">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <a href="tel:+9779851334161">
+              <h3>Phone</h3>
+              +977 985 1334161
+            </a>
+          </div>
+        </div>
+        <div class="contact__info__item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <a href="https://maps.app.goo.gl/o3bJgTc6jHX8PrHH8" target="_blank">
+              <h3>Address</h3>
+              Dallu Awas-15, <br />Kathmandu, Nepal
+            </a>
+          </div>
+        </div>
+      </div>
+      <form action="https://formspree.io/f/mwvoeagn" method="POST">
+        <input
+          type="text"
+          name="name"
+          class="contact__input"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          class="contact__input"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          name="message"
+          class="contact__textarea"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit" class="contact__button">Send Message</button>
+      </form>
+    </section>
+
     <script>
-      const hamburger = document.getElementById("hamburger")
+      const hamburger = document.getElementById("hamburger");
+      const sidebar = document.querySelector(".sidebar__content");
+
       hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("sidebar_hamburger_translate")
-      })
+        const nowOpen = sidebar.classList.toggle("is-open");
+        document.body.classList.toggle("sidebar-open", nowOpen);
+        hamburger.classList.toggle("sidebar__hamburger__translate", nowOpen);
+      });
+
+      const heroContactBtn = document.getElementById("heroContactBtn");
+      heroContactBtn.addEventListener("click", () => {
+        document
+          .getElementById("contact")
+          .scrollIntoView({ behavior: "smooth" });
+      });
     </script>
   </body>
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__section">
+        <h3>Luva Dongol</h3>
+        <p>Electronics, Communication & Information Engineer</p>
+      </div>
+      <div class="footer__section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h3>Follow Me</h3>
+        <div class="footer__social">
+          <a
+            href="https://github.com/LuvaDongol"
+            target="_blank"
+            title="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/luva-dongol-89087b253/"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://x.com/_booring" target="_blank" title="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" title="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="mailto:luvadongol00@gmail.com" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__divider"></div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Luva Dongol. All rights reserved.</p>
+      <p>Made with <i class="fa-solid fa-heart"></i> by Luva</p>
+    </div>
+  </footer>
 </html>
